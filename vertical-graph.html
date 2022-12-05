@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .vertical-bar-graph{
+        display:block;
+        background-color: whitesmoke;
+        width:180px;
+        margin:0 auto;  
+    }
+    .vertical-bar{
+        display:inline-block;
+        background-color: darkgrey;
+        width:30px;
+        height:250px;
+        margin:0.75em;
+    }
+    .vertical-bar-inner{
+        background-color: white;
+        height:100%;
+    }
+    .outer-bar{
+        display:inline-block;
+        text-align: center; 
+    }
+    #bar1 .vertical-bar-inner{
+        width: 100%;
+        height: 70%;
+        animation-name: bar1filler;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+    }
+    @keyframes bar1filler {
+        0%{
+            height:100%;
+        }
+        100%{
+            height:70%;
+        }
+    }
+
+    #bar2 .vertical-bar-inner{
+        width: 100%;
+        height: 60%;
+        animation-name: bar2filler;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+    }
+    @keyframes bar2filler {
+        0%{
+            height:100%;
+        }
+        100%{
+            height:60%;
+        }
+    }
+
+    #bar3 .vertical-bar-inner{
+        width: 100%;
+        height: 20%;
+        animation-name: bar3filler;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+    }
+    @keyframes bar3filler {
+        0%{
+            height:100%;
+        }
+        100%{
+            height:20%;
+        }
+    }
+</style>
+<body>
+    <div class ="vertical-bar-graph">
+        <div class ="outer-bar">
+            <div class="vertical-bar" id="bar1">
+                <div class="vertical-bar-inner">
+
+                </div>
+            </div>
+            <br>
+            30%
+        </div>
+        <div class ="outer-bar">
+            <div class="vertical-bar" id="bar2">
+                <div class="vertical-bar-inner">
+
+                </div>
+            </div>
+            <br>
+            40%
+        </div>
+        <div class ="outer-bar">
+            <div class="vertical-bar" id="bar3">
+                <div class="vertical-bar-inner">
+
+                </div>
+            </div>
+            <br>
+            80%
+        </div>
+        <h1 style="text-align: center;">Bar Plot</h1>
+    </div>
+    
+</body>
+</html>
